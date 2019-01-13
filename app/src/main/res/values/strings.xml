@@ -1,0 +1,39 @@
+<resources>
+    <string name="main_title">Calculator to Estimate the Exposure Window for Ebola Virus Disease</string>
+    <string name="version" translatable="false">version 2019.01.12</string>
+    <string name="app_name">Ebola Exposure Calculator</string>
+    <string name="text_maintitle">Select exposure calculator by:</string>
+    <string name="text_mainsymptoms">date of onset of symptoms:</string>
+    <string name="text_maindeath">date of death:</string>
+    <string name="button_main">Go</string>
+    <string name="text_calculator_title">Exposure Dates Estimator</string>
+    <string name="text_dth_subtitle">By Date of Death</string>
+    <string name="text_dth_selectdate">Date of death:</string>
+    <string name="text_dth_delay">Number of days between symptom onset and death (typically, 7-10):</string>
+    <string name="text_dth_resultstitle">Estimated Exposure Dates</string>
+    <string name="text_days">days</string>
+    <string name="text_edit">Edit</string>
+    <string name="main_incubation_instructions">Use the fields below to change the incubation period
+        for calculations of potential exposure periods.
+        In general,these do not need to be altered, so only edit if needed.</string>
+    <string name="main_incubation_title">Incubation Period for Ebola Virus Disease</string>
+    <string name="txt_death_date_label">Start of symptoms:</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="text_sympt_subtitle">By Date of Symptom Onset</string>
+    <string name="label_time_to_bleeding_onset">Number of days from start of symptoms to start of bleeding (typically, at least 6 days):</string>
+    <string name="label_bleeding_yesno">At symptom onset, was the patient bleeding?</string>
+    <string name="disclaimer">This calculator estimates <b>the period of time during which a person
+        with Ebola virus disease may have been exposed to the virus.</b>\n\n
+        This tool may be useful in guiding case investigations by helping to more
+        reliably calculate the period during which the patient was likely to have
+        been exposed to Ebola virus.\n\n
+        <b>Important:</b> this only provides <b>an estimate</b> of the exposure window.
+        The true exposure window may be different.\n\n
+        The information provided by this tool need to be used in the context of
+        other known information about the case in question.</string>
+    <string name="ok">OK</string>
+    <string name="diarrhea_yesno">At the onset of symptoms, did the patient have diarrhea?</string>
+    <string name="label_time_to_diarrhea_onset">Number of days from start of symptoms to start of diarrhea (typically, at least 4 days):</string>
+    <string name="incubation_period_label">Incubation period for Ebola:</string>
+</resources>

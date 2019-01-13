@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorBySymptomDate">
+
+    <TextView
+        android:id="@+id/tvSymptTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textAlignment="gravity"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tbSymptSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sympt_subtitle"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSymptTitle" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncPeriodSx" />
+
+    <TextView
+        android:id="@+id/labelSymptomDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="end"
+        android:text="@string/txt_death_date_label"
+        android:textAlignment="gravity"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvSelectedDate"
+        app:layout_constraintEnd_toStartOf="@+id/tvSelectedDate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBleeding"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@+id/rbBleedingNo"
+        app:layout_constraintStart_toStartOf="@+id/tvSelectedDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectedDate">
+
+        <RadioButton
+            android:id="@+id/rbBleedingYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/design_default_color_primary_dark"
+            android:text="@string/yes"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbBleedingNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/design_default_color_primary_dark"
+            android:text="@string/no"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextBleedingTime"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="7"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupBleeding"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupBleeding" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDiarrhea"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:checkedButton="@+id/rbDiarrheaNo"
+        app:layout_constraintStart_toStartOf="@+id/editTextBleedingTime"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBleedingTime">
+
+        <RadioButton
+            android:id="@+id/rbDiarrheaYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/design_default_color_primary_dark"
+            android:text="@string/yes"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbDiarrheaNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/design_default_color_primary_dark"
+            android:text="@string/no"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextDiarrheaTime"
+        android:layout_width="79dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="4"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupDiarrhea"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDiarrhea" />
+
+    <TextView
+        android:id="@+id/labelBleedingYN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="end"
+        android:text="@string/label_bleeding_yesno"
+        android:textAlignment="gravity"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelSymptomDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupBleeding" />
+
+    <TextView
+        android:id="@+id/labelBleedingTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="end"
+        android:text="@string/label_time_to_bleeding_onset"
+        android:textAlignment="gravity"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelBleedingYN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextBleedingTime" />
+
+    <TextView
+        android:id="@+id/labelDiarrheaYN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="@string/diarrhea_yesno"
+        android:textAlignment="gravity"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelBleedingTime"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupDiarrhea" />
+
+    <TextView
+        android:id="@+id/labelDiarrheaTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="@string/label_time_to_diarrhea_onset"
+        android:textAlignment="gravity"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelDiarrheaYN"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextDiarrheaTime" />
+
+    <TextView
+        android:id="@+id/tvExposureDatesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_dth_resultstitle"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvEstEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEstStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select Date"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvDash" />
+
+    <TextView
+        android:id="@+id/tvEstEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select Date"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvDash" />
+
+    <TextView
+        android:id="@+id/tvDash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="--"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEstSymptDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="end"
+        android:text="@string/txt_death_date_label"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvExposureDatesLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tvEstSymptDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEstSymptDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEstSymptDateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvEstSymptDateLabel" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDiarrheaTime" />
+
+    <TextView
+        android:id="@+id/tvIncPeriodSx"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:text="tv"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/tvSelectedDate"
+        app:layout_constraintTop_toBottomOf="@+id/tbSymptSubTitle" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/tvIncPdLabelSxs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbSymptSubTitle" />
+
+    <TextView
+        android:id="@+id/tvIncPdLabelSxs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incubation_period_label"
+        android:textAlignment="textEnd"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIncPeriodSx"
+        app:layout_constraintEnd_toEndOf="@+id/labelSymptomDate" />
+
+    <TextView
+        android:id="@+id/tvIncPdDaysSxs"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/text_days"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvIncPeriodSx"
+        app:layout_constraintStart_toEndOf="@+id/tvIncPeriodSx" />
+
+    <ImageView
+        android:id="@+id/ivHelp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tbSymptSubTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSymptTitle"
+        app:srcCompat="@drawable/ic_baseline_help_24px" />
+
+</android.support.constraint.ConstraintLayout>
