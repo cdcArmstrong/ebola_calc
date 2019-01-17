@@ -1,4 +1,6 @@
 Ebola Exposure Window Calculator
 Privacy Statement
 
-Data entered into this application remain on the device.  The application is not connected to an external server; data are never shared with any external database.
+Data entered into this application remain on the device.
+The application is not connected to an external server; 
+data are never shared with any external database.
