@@ -36,4 +36,5 @@
     <string name="diarrhea_yesno">At the onset of symptoms, did the patient have diarrhea?</string>
     <string name="label_time_to_diarrhea_onset">Number of days from start of symptoms to start of diarrhea (typically, at least 4 days):</string>
     <string name="incubation_period_label">Incubation period for Ebola:</string>
+    <string name="source_code" translatable="false">source code: github.com/cdcarmstrong/ebola_calc</string>
 </resources>
