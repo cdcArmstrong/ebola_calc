@@ -104,8 +104,8 @@ public final class R {
         public static final int tag_unhandled_key_listeners = 0x7f0800ca;
         public static final int text = 0x7f0800cc;
         public static final int text2 = 0x7f0800cd;
-        public static final int time = 0x7f0800d8;
-        public static final int title = 0x7f0800d9;
+        public static final int time = 0x7f0800d7;
+        public static final int title = 0x7f0800d8;
     }
     public static final class integer {
         private integer() {}
@@ -125,7 +125,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0d0042;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0043;
     }
     public static final class style {
         private style() {}
