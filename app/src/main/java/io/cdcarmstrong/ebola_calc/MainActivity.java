@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
                 else setLocale("fr");
             }
         };
+
+        // update version name
+        String strVersion = "Version " + BuildConfig.VERSION_NAME;
+        TextView tvVersion = findViewById(R.id.tvVersion);
+        tvVersion.setText(strVersion);
 
         // set actions for each of the buttons
         // button1: opens the symptom onset activity
@@ -76,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(R.id.tvDays2).setAlpha(1.0f);
                     findViewById(R.id.tvMin).setAlpha(1.0f);
                     findViewById(R.id.tvMax).setAlpha(1.0f);
+                    findViewById(R.id.btEditIncPd).setEnabled(false); //disable button
                 }
         });
 
@@ -86,15 +93,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
+
         EditText editTextMin = findViewById(R.id.etMinIncPd);
         EditText editTextMax = findViewById(R.id.etMaxIncPd);
-        // disable and dim the two EditText views
+        // disable and dim the two EditText views, make sure incubation period button is enabled
         editTextMin.setEnabled(false);
         editTextMax.setEnabled(false);
         editTextMin.setAlpha(0.2f);
         editTextMax.setAlpha(0.2f);
+        findViewById(R.id.btEditIncPd).setEnabled(true);
         // dim the text around them:
         findViewById(R.id.tvDays1).setAlpha(0.2f);
         findViewById(R.id.tvDays2).setAlpha(0.2f);
@@ -106,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         String currLang = getResources().getConfiguration().locale.getLanguage();
         // listener is set to null while radio button is set (so as not to start a loop)
         rgSelectLang.setOnCheckedChangeListener(null);
-        if (currLang == "en"){
+        if (currLang.equals("en")){
             rgSelectLang.check(R.id.rbEnglish);
         }
         else{

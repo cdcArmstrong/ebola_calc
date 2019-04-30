@@ -1,0 +1,4 @@
+#Tue Apr 30 18:10:44 EDT 2019
+base.0=/Users/greg/Documents/android/ebola_calc/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

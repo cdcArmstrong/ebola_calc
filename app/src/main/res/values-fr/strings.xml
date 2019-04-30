@@ -8,10 +8,9 @@
     <string name="button_main">Aller</string>
     <string name="text_calculator_title">Calculatrice des Dates d\'Exposition</string>
     <string name="text_dth_subtitle">En fonction de la date de décès</string>
-    <string name="text_dth_selectdate">Indiquer la date du décès:</string>
-    <string name="text_dth_delay"><b>Temps qui s’écoule entre le début des symptômes et le décès.</b>
-        Utilizer les controles ci-dessous pour modifier le temps qui s’ecoule entre l’apparition de la maldie et le deces.
-        En general, c’est 7 a 10 jours:</string>
+    <string name="text_dth_selectdate">Date du décès:</string>
+    <string name="text_dth_delay">Temps qui s’écoule entre le début des symptômes et le décès
+        (en general, entre 7 et 10 jours):</string>
     <string name="text_dth_resultstitle">Dates d\'exposition (estimées)</string>
     <string name="text_days">jours</string>
     <string name="text_edit">Modifier</string>

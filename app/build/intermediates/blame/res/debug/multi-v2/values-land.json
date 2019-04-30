@@ -4,7 +4,17 @@
             "outputFile": "/Users/greg/Documents/android/ebola_calc/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/greg/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6222bcb6d38bb89099154631ae457bd1/res/values-land/values-land.xml",
+                    "source": "/Users/greg/.gradle/caches/transforms-2/files-2.1/82dbfd1767aeaa202f87ea716d5bb130/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/greg/.gradle/caches/transforms-2/files-2.1/78ad4c864dfb251748812c0e83b6afeb/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "/Users/greg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/099b40b8c2c3248b8dae415e76264ae4/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

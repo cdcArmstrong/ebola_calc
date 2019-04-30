@@ -195,11 +195,16 @@ public class CalculatorBySymptomDate extends AppCompatActivity {
                 diarrheaYesNo =true;
                 makeViewActive(tvDiarrheaTime_label,true);
                 makeViewActive(etDiarrheaTime, true);
+                makeViewActive(tvBleedingYesNo_label, false);
+                makeViewActive(rgBleedingYesNo, false);
+
             }
             else{
                 diarrheaYesNo =false;
                 makeViewActive(tvDiarrheaTime_label, false);
                 makeViewActive(etDiarrheaTime, false);
+                makeViewActive(tvBleedingYesNo_label, true);
+                makeViewActive(rgBleedingYesNo, true);
             }
         }
 
