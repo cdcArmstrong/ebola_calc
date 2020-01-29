@@ -2,6 +2,4 @@
 A simple Android app to estimate the exposure window in an ebola case.
 
 
-This app went into development on January 22, 2019.  It is available on the Google Play store by searching for Ebola Exposure Window Calculator.
-
-Any comments and contributions are welcome
+This app was transferred to https://github.com/milesstewart/ebola-exposure-app on September 2018; the version here has not been maintained or updated since.
